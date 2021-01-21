@@ -28,8 +28,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run : npm install  
-      - run: npm ci
-      - run: npm publish
+      - run: npm run lint
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
